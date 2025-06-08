@@ -16,6 +16,8 @@ A carefully curated Neovim setup built with **lazy.nvim** for fast plugin manage
 - **🌃 Tokyo Night** - Clean dark colorscheme that's easy on the eyes
 - **🌲 nvim-tree.lua** - Intuitive file explorer for project navigation
 - **🧭 vim-tmux-navigator** - Seamless navigation between tmux panes and vim splits
+- **🔍 telescope.nvim** - Powerful fuzzy finder for files, buffers, and everything else
+- **🏠 alpha-nvim** - Beautiful dashboard with custom ASCII art greeter
 - **🗝️ which-key.nvim** - Interactive keymap guide (because nobody remembers everything)
 - **🎨 nvim-web-devicons** - Beautiful file type icons
 
@@ -82,8 +84,10 @@ dotfiles/
 │               ├── lazy.lua           # Plugin manager setup
 │               └── plugins/
 │                   ├── init.lua       # Essential plugins
+│                   ├── alpha.lua      # Dashboard config
 │                   ├── colorscheme.lua # Theme vibes
 │                   ├── nvim-tree.lua  # File tree config
+│                   ├── telescope.lua  # Fuzzy finder setup
 │                   └── which-key.lua  # Keymap helper
 ```
 

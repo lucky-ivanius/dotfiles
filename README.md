@@ -13,13 +13,20 @@ Minimal yet powerful development environment configurations. Clean, efficient, a
 A carefully curated Neovim setup built with **lazy.nvim** for fast plugin management and optimal performance. ⚡
 
 **🔌 Core Plugins:**
-- **🌃 Tokyo Night** - Clean dark colorscheme that's easy on the eyes
-- **🌲 nvim-tree.lua** - Intuitive file explorer for project navigation
-- **🧭 vim-tmux-navigator** - Seamless navigation between tmux panes and vim splits
-- **🔍 telescope.nvim** - Powerful fuzzy finder for files, buffers, and everything else
-- **🏠 alpha-nvim** - Beautiful dashboard with custom ASCII art greeter
-- **🗝️ which-key.nvim** - Interactive keymap guide (because nobody remembers everything)
-- **🎨 nvim-web-devicons** - Beautiful file type icons
+- **🌃 [Tokyo Night](https://github.com/folke/tokyonight.nvim)** - Clean dark colorscheme that's easy on the eyes
+  - [colorscheme.lua](.config/nvim/lua/lucky/plugins/colorscheme.lua)
+- **🌲 [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)** - Intuitive file explorer for project navigation
+  - [nvim-tree.lua](.config/nvim/lua/lucky/plugins/nvim-tree.lua)
+- **🧭 [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)** - Seamless navigation between tmux panes and vim splits
+  - [init.lua](.config/nvim/lua/lucky/plugins/init.lua)
+- **🔍 [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)** - Powerful fuzzy finder for files, buffers, and everything else
+  - [telescope.lua](.config/nvim/lua/lucky/plugins/telescope.lua)
+- **🏠 [alpha-nvim](https://github.com/goolord/alpha-nvim)** - Beautiful dashboard with custom ASCII art greeter
+  - [alpha.lua](.config/nvim/lua/lucky/plugins/alpha.lua)
+- **🗝️ [which-key.nvim](https://github.com/folke/which-key.nvim)** - Interactive keymap guide (because nobody remembers everything)
+  - [which-key.lua](.config/nvim/lua/lucky/plugins/which-key.lua)
+- **🎨 [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)** - Beautiful file type icons
+  - [init.lua](.config/nvim/lua/lucky/plugins/init.lua)
 
 **✨ Key Features:**
 - 📊 Relative line numbers for efficient navigation

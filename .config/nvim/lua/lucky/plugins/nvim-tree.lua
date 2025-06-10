@@ -24,6 +24,15 @@ return {
               arrow_closed = "", -- arrow when folder is closed
               arrow_open = "", -- arrow when folder is open
             },
+            git = {
+              unstaged = "M",
+              staged = "S",
+              unmerged = "U",
+              renamed = "R",
+              untracked = "?",
+              deleted = "D",
+              ignored = "I",
+            },
           },
         },
       },

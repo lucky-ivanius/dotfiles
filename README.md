@@ -28,12 +28,39 @@ A carefully curated Neovim setup built with **lazy.nvim** for fast plugin manage
 - **🎨 [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)** - Beautiful file type icons
   - [init.lua](.config/nvim/lua/lucky/plugins/init.lua)
 
+**🚀 Development Productivity:**
+- **🧠 [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)** - Intelligent autocompletion engine with buffer and path sources
+  - [nvim-cmp.lua](.config/nvim/lua/lucky/plugins/nvim-cmp.lua)
+- **🌳 [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)** - Advanced syntax highlighting and code understanding for 20+ languages
+  - [treesitter.lua](.config/nvim/lua/lucky/plugins/treesitter.lua)
+- **📊 [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)** - Elegant and informative status line with custom theme
+  - [lualine.lua](.config/nvim/lua/lucky/plugins/lualine.lua)
+- **📑 [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)** - Enhanced buffer tabs with slant separators and intuitive navigation
+  - [bufferline.lua](.config/nvim/lua/lucky/plugins/bufferline.lua)
+- **🔗 [nvim-autopairs](https://github.com/windwp/nvim-autopairs)** - Smart automatic bracket and quote pairing with treesitter integration
+  - [autopairs.lua](.config/nvim/lua/lucky/plugins/autopairs.lua)
+
+**⚙️ Workflow Enhancement:**
+- **💾 [auto-session](https://github.com/rmagatti/auto-session)** - Automatic session management with restore keybindings (`<leader>wr`, `<leader>ws`)
+  - [autosession.lua](.config/nvim/lua/lucky/plugins/autosession.lua)
+- **📐 [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)** - Visual indent guides for better code structure visibility
+  - [indent-blankline.lua](.config/nvim/lua/lucky/plugins/indent-blankline.lua)
+- **💎 [dressing.nvim](https://github.com/stevearc/dressing.nvim)** - Enhanced UI components for better user experience
+  - [dressing.lua](.config/nvim/lua/lucky/plugins/dressing.lua)
+- **🎮 [vim-be-good](https://github.com/ThePrimeagen/vim-be-good)** - Interactive Vim practice game for skill improvement
+  - [tutorial.lua](.config/nvim/lua/lucky/plugins/tutorial.lua)
+
 **✨ Key Features:**
 - 📊 Relative line numbers for efficient navigation
 - 📐 2-space indentation for clean, consistent code formatting
 - 🔍 Smart case-sensitive search functionality
 - 📋 System clipboard integration for seamless copy-paste workflow
 - 🪟 Sensible split behavior (opens right and below)
+- 🧠 Intelligent autocompletion with buffer and path sources
+- 🌳 Advanced syntax highlighting for 20+ programming languages
+- 💾 Automatic session management and restoration
+- 📑 Enhanced buffer management with visual tabs
+- 🎮 Built-in Vim practice game for skill improvement
 
 ## 📋 Prerequisites
 

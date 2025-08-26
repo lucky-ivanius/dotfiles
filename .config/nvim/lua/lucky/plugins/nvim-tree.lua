@@ -27,9 +27,9 @@ return {
             git = {
               unstaged = "M",
               staged = "S",
-              unmerged = "U",
+              unmerged = "N",
               renamed = "R",
-              untracked = "?",
+              untracked = "U",
               deleted = "D",
               ignored = "I",
             },
@@ -37,8 +37,7 @@ return {
         },
       },
       -- disable window_picker for
-      -- explorer to work well with
-      -- window splits
+      -- explorer to work well with window splits
       actions = {
         open_file = {
           window_picker = {

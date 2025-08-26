@@ -51,7 +51,7 @@ return {
         "biome",
         "eslint_d",
         "pylint",
-        "luacheck",
+        "selene",
         "golangci-lint",
         "cpplint",
         "yamllint",

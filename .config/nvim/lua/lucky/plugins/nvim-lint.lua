@@ -15,7 +15,7 @@ return {
       css = { "biomejs" },
       svelte = { "eslint_d" },
       python = { "pylint" },
-      lua = { "luacheck" },
+      lua = { "selene" },
       go = { "golangcilint" },
       rust = { "clippy" },
       c = { "cpplint" },

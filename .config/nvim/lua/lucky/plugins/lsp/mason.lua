@@ -49,6 +49,13 @@ return {
         "black",
         "clang-format",
         "biome",
+        "eslint_d",
+        "pylint",
+        "luacheck",
+        "golangci-lint",
+        "cpplint",
+        "yamllint",
+        "markdownlint",
       },
     })
   end,

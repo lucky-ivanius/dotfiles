@@ -1,62 +1,68 @@
 return {
-  "williamboman/mason.nvim",
-  dependencies = {
-    "williamboman/mason-lspconfig.nvim",
-    "WhoIsSethDaniel/mason-tool-installer.nvim",
-  },
-  config = function()
-    -- import mason
-    local mason = require("mason")
+	"williamboman/mason.nvim",
+	dependencies = {
+		"williamboman/mason-lspconfig.nvim",
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
+	},
+	config = function()
+		-- import mason
+		local mason = require("mason")
 
-    -- import mason-lspconfig
-    local mason_lspconfig = require("mason-lspconfig")
-    
-    -- import mason-tool-installer
-    local mason_tool_installer = require("mason-tool-installer")
+		-- import mason-lspconfig
+		local mason_lspconfig = require("mason-lspconfig")
 
-    -- enable mason and configure icons
-    mason.setup({
-      ui = {
-        icons = {
-          package_installed = "✓",
-          package_pending = "➜",
-          package_uninstalled = "✗",
-        },
-      },
-    })
+		-- import mason-tool-installer
+		local mason_tool_installer = require("mason-tool-installer")
 
-    mason_lspconfig.setup({
-      -- list of servers for mason to install
-      ensure_installed = {
-        "tsserver",
-        "html",
-        "cssls",
-        "tailwindcss",
-        "svelte",
-        "lua_ls",
-        "graphql",
-        "emmet_ls",
-        "prismals",
-        "pyright",
-      },
-    })
+		-- enable mason and configure icons
+		mason.setup({
+			ui = {
+				icons = {
+					package_installed = "✓",
+					package_pending = "➜",
+					package_uninstalled = "✗",
+				},
+			},
+		})
 
-    mason_tool_installer.setup({
-      ensure_installed = {
-        "prettier",
-        "stylua",
-        "isort",
-        "black",
-        "clang-format",
-        "biome",
-        "eslint_d",
-        "pylint",
-        "selene",
-        "golangci-lint",
-        "cpplint",
-        "yamllint",
-        "markdownlint",
-      },
-    })
-  end,
+		mason_lspconfig.setup({
+			-- list of servers for mason to install
+			ensure_installed = {
+				"ts_ls",
+				"html",
+				"cssls",
+				"tailwindcss",
+				"svelte",
+				"lua_ls",
+				"graphql",
+				"emmet_ls",
+				"prismals",
+				"pyright",
+				"rust_analyzer",
+				"solc",
+				"elixirls",
+			},
+		})
+
+		mason_tool_installer.setup({
+			ensure_installed = {
+				"prettier",
+				"stylua",
+				"isort",
+				"black",
+				"clang-format",
+				"biome",
+				"eslint_d",
+				"pylint",
+				"selene",
+				"golangci-lint",
+				"cpplint",
+				"yamllint",
+				"markdownlint",
+				"forge",
+				"solhint",
+				"credo",
+			},
+		})
+	end,
 }

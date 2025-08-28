@@ -1,44 +1,46 @@
 return {
-  "stevearc/conform.nvim",
-  lazy = true,
-  event = { "BufReadPre", "BufNewFile" },
-  config = function()
-    local conform = require("conform")
+	"stevearc/conform.nvim",
+	lazy = true,
+	event = { "BufReadPre", "BufNewFile" },
+	config = function()
+		local conform = require("conform")
 
-    conform.setup({
-      formatters_by_ft = {
-        javascript = { "biome" },
-        typescript = { "biome" },
-        javascriptreact = { "biome" },
-        typescriptreact = { "biome" },
-        json = { "biome" },
-        jsonc = { "biome" },
-        css = { "biome" },
-        graphql = { "biome" },
-        html = { "prettier" },
-        svelte = { "prettier" },
-        yaml = { "prettier" },
-        markdown = { "prettier" },
-        python = { "isort", "black" },
-        rust = { "rustfmt" },
-        c = { "clang_format" },
-        cpp = { "clang_format" },
-        lua = { "stylua" },
-        go = { "gofmt" },
-      },
-      format_on_save = {
-        lsp_fallback = true,
-        async = false,
-        timeout_ms = 1000,
-      },
-    })
+		conform.setup({
+			formatters_by_ft = {
+				javascript = { "biome" },
+				typescript = { "biome" },
+				javascriptreact = { "biome" },
+				typescriptreact = { "biome" },
+				json = { "biome" },
+				jsonc = { "biome" },
+				css = { "biome" },
+				graphql = { "biome" },
+				html = { "prettier" },
+				svelte = { "prettier" },
+				yaml = { "prettier" },
+				markdown = { "prettier" },
+				python = { "isort", "black" },
+				rust = { "rustfmt" },
+				c = { "clang_format" },
+				cpp = { "clang_format" },
+				lua = { "stylua" },
+				go = { "gofmt" },
+				solidity = { "forge_fmt" },
+				elixir = { "mix" },
+			},
+			format_on_save = {
+				lsp_fallback = true,
+				async = false,
+				timeout_ms = 1000,
+			},
+		})
 
-    vim.keymap.set({ "n", "v" }, "<leader>mp", function()
-      conform.format({
-        lsp_fallback = true,
-        async = false,
-        timeout_ms = 1000,
-      })
-    end, { desc = "Format file or range (in visual mode)" })
-  end,
+		vim.keymap.set({ "n", "v" }, "<leader>mp", function()
+			conform.format({
+				lsp_fallback = true,
+				async = false,
+				timeout_ms = 1000,
+			})
+		end, { desc = "Format file or range (in visual mode)" })
+	end,
 }

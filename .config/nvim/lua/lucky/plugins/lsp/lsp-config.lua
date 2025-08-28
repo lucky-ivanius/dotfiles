@@ -7,12 +7,6 @@ return {
 		{ "folke/neodev.nvim", opts = {} },
 	},
 	config = function()
-		-- import lspconfig plugin
-		local lspconfig = require("lspconfig")
-
-		-- import mason_lspconfig plugin
-		local mason_lspconfig = require("mason-lspconfig")
-
 		-- import cmp-nvim-lsp plugin
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
@@ -82,36 +76,34 @@ return {
 			},
 		})
 
-
-		vim.lsp.config('lua_ls', {
+		vim.lsp.config("lua_ls", {
 			capabilities = capabilities,
 			settings = {
 				Lua = {
 					completion = {
-						callSnippet = 'Replace',
+						callSnippet = "Replace",
 					},
 					diagnostics = {
 						globals = {
-							'vim',
+							"vim",
 						},
 					},
 				},
 			},
 		})
 
-		vim.lsp.config('emmet_ls', {
+		vim.lsp.config("emmet_ls", {
 			capabilities = capabilities,
 			filetypes = {
-				'html',
-				'typescriptreact',
-				'javascriptreact',
-				'css',
-				'sass',
-				'scss',
-				'less',
-				'svelte',
+				"html",
+				"typescriptreact",
+				"javascriptreact",
+				"css",
+				"sass",
+				"scss",
+				"less",
+				"svelte",
 			},
 		})
-
 	end,
 }

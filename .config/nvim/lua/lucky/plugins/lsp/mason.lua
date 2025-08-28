@@ -59,9 +59,7 @@ return {
 				"cpplint",
 				"yamllint",
 				"markdownlint",
-				"forge",
 				"solhint",
-				"credo",
 			},
 		})
 	end,
